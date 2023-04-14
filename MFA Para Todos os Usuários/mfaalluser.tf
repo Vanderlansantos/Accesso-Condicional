@@ -1,6 +1,5 @@
 data "azuread_client_config" "current" {}
 
-
 resource "azuread_conditional_access_policy" "MFA-Users" {
   display_name = "Mfa para todos os usuários"
   state        = "enabled"
